@@ -123,7 +123,6 @@ const fi = (function() {
       } else {
         console.log("cool")
       }
-
     }
 
 
