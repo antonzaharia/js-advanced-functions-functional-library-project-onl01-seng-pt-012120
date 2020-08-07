@@ -118,7 +118,7 @@ const fi = (function() {
     },
 
     flatten: function(arr, bool) {
-      if (bool === true ){
+      if (bool === undefined ){
         return Array.prototype.concat.apply([], arr);
       } else {
         console.log("cool")
