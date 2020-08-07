@@ -121,9 +121,7 @@ const fi = (function() {
       if (bool === true ){
         return Array.prototype.concat.apply([], arr);
       } else {
-        arr.reduce(function(a, b){
-          return a.concat(b);
-        }, []);
+        console.log("cool")
       }
 
     }
