@@ -119,7 +119,13 @@ const fi = (function() {
 
     flatten: function(arr, bool) {
       if (bool === undefined ){
-          console.log("cool")
+        return arr.map(function(e){
+          if (Array.isArray(e)){
+            return e[0];
+          } else {
+            return e;
+          }
+        })
       } else {
         return Array.prototype.concat.apply([], arr);
       }
